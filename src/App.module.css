@@ -1,0 +1,11 @@
+.container {
+  padding: 10px 100px;
+}
+
+.small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 16px;
+}
