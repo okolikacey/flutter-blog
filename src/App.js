@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./screens";
 import PostDetail from "./screens/PostDetail";
 import Flutterwave from "./components/Flutterwave";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
