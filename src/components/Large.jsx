@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import relativeTime from "dayjs/plugin/relativeTime";
 import image from "../assets/large.svg";
 import styles from "./styles/large.module.css";
@@ -6,8 +6,10 @@ import arrow from "../assets/arrow.svg";
 import { Link } from "react-router-dom";
 import dayjs from "dayjs";
 import parse from "html-react-parser";
+import postApi from "../api/post";
 
 function Large({ postItem }) {
+  // const authorURL =
   dayjs.extend(relativeTime);
   return (
     <div className={styles.container}>

@@ -7,6 +7,7 @@ import dayjs from "dayjs";
 import parse from "html-react-parser";
 
 function Small({ postItem }) {
+  // console.log("🚀 ~ file: Small.jsx ~ line 10 ~ Small ~ postItem", postItem);
   dayjs.extend(relativeTime);
 
   return (

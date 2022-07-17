@@ -9,4 +9,5 @@ button {
   width: 177px;
   height: 45px;
   border: none;
+  cursor: pointer;
 }

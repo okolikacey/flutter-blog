@@ -11,6 +11,8 @@ h2 {
 
 .postImage {
   align-self: center;
+  width: 300px;
+  height: 300px;
 }
 
 .more {
