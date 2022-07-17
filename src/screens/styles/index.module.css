@@ -16,3 +16,9 @@
   display: flex;
   flex: 3;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

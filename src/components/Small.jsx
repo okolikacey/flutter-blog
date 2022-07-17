@@ -7,7 +7,6 @@ import dayjs from "dayjs";
 import parse from "html-react-parser";
 
 function Small({ postItem }) {
-  // console.log("🚀 ~ file: Small.jsx ~ line 10 ~ Small ~ postItem", postItem);
   dayjs.extend(relativeTime);
 
   return (
@@ -16,13 +15,12 @@ function Small({ postItem }) {
         <img
           src={postItem.jetpack_featured_media_url}
           alt={postItem.title.rendered}
-          width={300}
-          height={192.7}
         />
       </div>
       <div className={styles.text}>
         <div className={styles.time}>
-          <b>Front-end</b> . {dayjs(postItem.date).fromNow()}
+          <b>Front-end </b> <div className={styles.dot}> . </div>{" "}
+          {dayjs(postItem.date).fromNow()}
         </div>
         <div className={styles.body}>
           <h2>{parse(postItem.title.rendered)}</h2>

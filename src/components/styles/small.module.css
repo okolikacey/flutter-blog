@@ -9,6 +9,12 @@
   border-radius: 5px;
 }
 
+.image img {
+  display: flex;
+  width: 350px;
+  height: 192.7px;
+}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -34,5 +40,14 @@
   flex: 5;
 }
 .time {
+  display: flex;
+  align-items: center;
   flex: 1;
+}
+.dot {
+  display: flex;
+  justify-content: center;
+  width: 10px;
+  margin-bottom: 9px;
+  font-weight: 900;
 }

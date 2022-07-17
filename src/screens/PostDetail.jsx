@@ -37,7 +37,7 @@ function PostDetail(props) {
         <div>{`By  ${author ? author : "Fetching author"} - ${dayjs(
           state.date
         ).fromNow()}`}</div>
-        <h2>{state.title.rendered}</h2>
+        <h2>{parse(state.title.rendered)}</h2>
         {parse(state.content.rendered)}
         <img
           className={styles.postImage}
