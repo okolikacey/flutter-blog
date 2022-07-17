@@ -2,23 +2,34 @@ import React from "react";
 import styles from "./styles/small.module.css";
 import arrow from "../assets/arrow.svg";
 import { Link } from "react-router-dom";
+import relativeTime from "dayjs/plugin/relativeTime";
+import dayjs from "dayjs";
+import parse from "html-react-parser";
 
 function Small({ postItem }) {
-  const { id, image, published, read_time, text, title, author } = postItem;
+  dayjs.extend(relativeTime);
+
   return (
     <div className={styles.container}>
       <div className={styles.image}>
-        <img src={image} alt={title} />
+        <img
+          src={postItem.jetpack_featured_media_url}
+          alt={postItem.title.rendered}
+          width={300}
+          height={192.7}
+        />
       </div>
       <div className={styles.text}>
         <div className={styles.time}>
-          <b>Front-end</b> . {published}
+          <b>Front-end</b> . {dayjs(postItem.date).fromNow()}
         </div>
-        <h2>{title}</h2>
-        <p>{text}</p>
+        <div className={styles.body}>
+          <h2>{parse(postItem.title.rendered)}</h2>
+          {parse(postItem.excerpt.rendered)}
+        </div>
         <div className={styles.readtime}>
-          <text>{read_time} Min Read</text>
-          <Link to={`/${id}`} state={{ id, image, published, title, author }}>
+          <text>3 Min Read</text>
+          <Link to={`/${postItem.id}`} state={postItem}>
             <div className={styles.link}>
               Read Full <img src={arrow} alt="arrow right" />
             </div>

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.54a9d2d1.css",
+    "main.js": "/static/js/main.bc219cd2.js",
+    "static/js/787.edb02f9e.chunk.js": "/static/js/787.edb02f9e.chunk.js",
+    "static/media/image1.svg": "/static/media/image1.5c1a9eb0dff02ba32a7bec695ff45256.svg",
+    "static/media/image2.svg": "/static/media/image2.dc4fab4c558acc305758dcc64909ee5e.svg",
+    "static/media/large.svg": "/static/media/large.a0f267581a5dbc0f57a475e1fcf62e5a.svg",
+    "static/media/Dasdas Logo 1.svg": "/static/media/Dasdas Logo 1.96500dc4c1423049d7556f182de20c61.svg",
+    "static/media/image3.svg": "/static/media/image3.53f475c85400c63c2c27a4ab78289ce7.svg",
+    "static/media/figma.svg": "/static/media/figma.400f8a58d617dbd08fe367b1af58fd7f.svg",
+    "static/media/dribbble.svg": "/static/media/dribbble.30d02b0d92eefc14e960f7bbf78c3ad2.svg",
+    "static/media/git.svg": "/static/media/git.49c1ce6410b6417d4811c5fece9f4818.svg",
+    "index.html": "/index.html",
+    "static/media/twitter.svg": "/static/media/twitter.590112a2278bf94588bda5256332604b.svg",
+    "static/media/arrow.svg": "/static/media/arrow.175872671e66ac53770d324cd47b069e.svg",
+    "static/media/dot.svg": "/static/media/dot.62dbf53c71af5d19ab6fee728dd44098.svg",
+    "main.54a9d2d1.css.map": "/static/css/main.54a9d2d1.css.map",
+    "main.bc219cd2.js.map": "/static/js/main.bc219cd2.js.map",
+    "787.edb02f9e.chunk.js.map": "/static/js/787.edb02f9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54a9d2d1.css",
+    "static/js/main.bc219cd2.js"
+  ]
+}

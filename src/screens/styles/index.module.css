@@ -1,7 +1,18 @@
-.small {
+.container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 50px;
   gap: 16px;
+}
+
+.large {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.small {
+  display: flex;
+  flex: 3;
 }

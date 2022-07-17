@@ -9,6 +9,12 @@
   border-radius: 5px;
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .readtime {
   display: flex;
   justify-content: space-between;
@@ -22,4 +28,11 @@
   justify-content: center;
   font-weight: 700;
   font-size: 13px;
+}
+
+.body {
+  flex: 5;
+}
+.time {
+  flex: 1;
 }
