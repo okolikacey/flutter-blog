@@ -13,10 +13,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-bottom: 5px; */
 }
 
-.readtime text:last-child {
+.link {
   display: flex;
   color: #1473e6;
   align-items: center;

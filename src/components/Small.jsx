@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./styles/small.module.css";
 import arrow from "../assets/arrow.svg";
+import { Link } from "react-router-dom";
 
 function Small({ postItem }) {
-  const { image, published, read_time, text, title } = postItem;
+  const { id, image, published, read_time, text, title, author } = postItem;
   return (
     <div className={styles.container}>
       <div className={styles.image}>
@@ -17,10 +18,11 @@ function Small({ postItem }) {
         <p>{text}</p>
         <div className={styles.readtime}>
           <text>{read_time} Min Read</text>
-          <text>
-            {" "}
-            Read Full <img src={arrow} alt="arrow right" />{" "}
-          </text>
+          <Link to={`/${id}`} state={{ id, image, published, title, author }}>
+            <div className={styles.link}>
+              Read Full <img src={arrow} alt="arrow right" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
